@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online VR Touring Tool</title>
+    <title>DiscoVeR - Online VR Touring Tool</title>
     <style>
         * {
             margin: 0;
@@ -40,11 +40,38 @@
         }
 
         .logo {
-            font-size: 1.5rem;
+            font-size: 1.8rem;
             font-weight: bold;
             display: flex;
             align-items: center;
             gap: 0.5rem;
+            letter-spacing: 1px;
+        }
+
+        .logo-icon {
+            background: white;
+            color: #667eea;
+            width: 40px;
+            height: 40px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        }
+
+        .logo-text {
+            font-family: 'Arial Black', sans-serif;
+        }
+
+        .logo-text .disco {
+            color: white;
+        }
+
+        .logo-text .ver {
+            color: #ffd700;
+            font-weight: 900;
         }
 
         .nav-links {
@@ -334,7 +361,8 @@
     <header>
         <nav>
             <div class="logo">
-                🥽 Online VR Touring Tool
+                <div class="logo-icon">🔍</div>
+                <span class="logo-text"><span class="disco">Disco</span><span class="ver">VeR</span></span>
             </div>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
@@ -346,8 +374,8 @@
     </header>
 
     <section class="hero">
-        <h1>Transform 3D Models into VR Experiences</h1>
-        <p>Create immersive virtual reality tours directly from your browser</p>
+        <h1>DiscoVeR - Discover Virtual Reality</h1>
+        <p>Transform 3D models into immersive VR experiences directly from your browser</p>
         <a href="#downloads" class="cta-button">View Reports</a>
     </section>
 
@@ -439,7 +467,7 @@
     </section>
 
     <footer id="contact">
-        <p>&copy; 2025 Online VR Touring Tool. All rights reserved.</p>
+        <p>&copy; 2025 DiscoVeR - Online VR Touring Tool. All rights reserved.</p>
         <p>Senior Year Capstone Project</p>
     </footer>
 
@@ -447,13 +475,13 @@
         // DOSYALARINIZI BURAYA EKLEYİN
         // GitHub'a dosyalarınızı yükledikten sonra raw URL'lerini alın ve buraya ekleyin
         const files = [
-            // Örnek dosya formatı:
-            // {
-            //     name: "Project Report - Q1 2025",
-            //     url: "https://raw.githubusercontent.com/username/repo/main/report.pdf",
-            //     size: "2.5 MB",
-            //     date: "2025-01-15"
-            // },
+            {
+                name: "Senior Project Proposal",
+                url: "https://raw.githubusercontent.com/humanfromnowhere/discover.github.io/main/Senior%20Project%20Proposal.pdf",
+                size: "PDF Document",
+                date: "2025-10-10"
+            }
+            // Yeni dosya eklemek için virgül koyup yukarıdaki formatı tekrarlayın:
             // {
             //     name: "Technical Documentation",
             //     url: "https://raw.githubusercontent.com/username/repo/main/technical-doc.pdf",
