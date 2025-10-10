@@ -20,7 +20,7 @@
 
         /* Header */
         header {
-            background: linear-gradient(135deg, #1e3a5f 0%, #4a1942 100%);
+            background: linear-gradient(135deg, #5b7ec8 0%, #7b5e9d 100%);
             color: white;
             padding: 1rem 0;
             position: fixed;
@@ -40,38 +40,23 @@
         }
 
         .logo {
-            font-size: 1.8rem;
+            font-size: 1.5rem;
             font-weight: bold;
             display: flex;
             align-items: center;
-            gap: 0.5rem;
-            letter-spacing: 1px;
+            gap: 0.8rem;
         }
 
-        .logo-icon {
-            background: white;
-            color: #667eea;
-            width: 40px;
-            height: 40px;
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.5rem;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        .logo-image {
+            width: 50px;
+            height: 50px;
+            object-fit: contain;
         }
 
         .logo-text {
-            font-family: 'Arial Black', sans-serif;
-        }
-
-        .logo-text .disco {
+            font-family: 'Arial', sans-serif;
+            font-size: 1.4rem;
             color: white;
-        }
-
-        .logo-text .ver {
-            color: #ffd700;
-            font-weight: 900;
         }
 
         .nav-links {
@@ -93,7 +78,7 @@
         /* Hero Section */
         .hero {
             margin-top: 70px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #1e3a5f 0%, #4a1942 100%);
             color: white;
             padding: 6rem 2rem;
             text-align: center;
@@ -115,8 +100,8 @@
         .cta-button {
             display: inline-block;
             padding: 1rem 2.5rem;
-            background: white;
-            color: #667eea;
+            background: linear-gradient(135deg, #d4af37 0%, #f4d03f 100%);
+            color: #1e3a5f;
             text-decoration: none;
             border-radius: 50px;
             font-weight: bold;
@@ -140,7 +125,7 @@
             font-size: 2.5rem;
             margin-bottom: 2rem;
             text-align: center;
-            color: #667eea;
+            color: #4a1942;
         }
 
         .about p {
@@ -160,7 +145,7 @@
             font-size: 2.5rem;
             text-align: center;
             margin-bottom: 3rem;
-            color: #667eea;
+            color: #4a1942;
         }
 
         .features-grid {
@@ -190,7 +175,7 @@
         }
 
         .feature-card h3 {
-            color: #667eea;
+            color: #4a1942;
             margin-bottom: 1rem;
         }
 
@@ -205,19 +190,19 @@
             font-size: 2.5rem;
             margin-bottom: 2rem;
             text-align: center;
-            color: #667eea;
+            color: #4a1942;
         }
 
         .use-case {
-            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            background: linear-gradient(135deg, #f5f7fa 0%, #e8d7e5 100%);
             padding: 2rem;
             border-radius: 10px;
             margin-bottom: 2rem;
-            border-left: 5px solid #667eea;
+            border-left: 5px solid #4a1942;
         }
 
         .use-case h3 {
-            color: #667eea;
+            color: #4a1942;
             margin-bottom: 1rem;
         }
 
@@ -231,7 +216,7 @@
             font-size: 2.5rem;
             text-align: center;
             margin-bottom: 1rem;
-            color: #667eea;
+            color: #4a1942;
         }
 
         .downloads-subtitle {
@@ -268,7 +253,7 @@
         }
 
         .download-info h3 {
-            color: #667eea;
+            color: #4a1942;
             margin-bottom: 0.5rem;
             font-size: 1.3rem;
         }
@@ -288,7 +273,7 @@
         }
 
         .download-button {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #1e3a5f 0%, #4a1942 100%);
             color: white;
             padding: 0.8rem 2rem;
             border-radius: 50px;
@@ -302,7 +287,7 @@
 
         .download-button:hover {
             transform: scale(1.05);
-            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+            box-shadow: 0 5px 15px rgba(74, 25, 66, 0.4);
         }
 
         .no-files-message {
@@ -361,8 +346,8 @@
     <header>
         <nav>
             <div class="logo">
-                <div class="logo-icon">🔍</div>
-                <span class="logo-text"><span class="disco">Disco</span><span class="ver">VeR</span></span>
+                <img src="https://raw.githubusercontent.com/humanfromnowhere/discover.github.io/main/logo.png" alt="DiscoVeR Logo" class="logo-image">
+                <span class="logo-text">DiscoVeR</span>
             </div>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
@@ -511,8 +496,8 @@
                             <span>📦 ${file.size}</span>
                         </div>
                     </div>
-                    <a href="${file.url}" class="download-button" download target="_blank">
-                        ⬇️ Download
+                    <a href="${file.url}" class="download-button" target="_blank">
+                        📄 View / Download
                     </a>
                 `;
                 container.appendChild(card);
