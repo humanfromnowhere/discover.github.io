@@ -133,15 +133,15 @@
         }
 
         .hero-logo {
-            width: 140px;
-            height: 140px;
+            width: 200px;
+            height: 200px;
             background: white;
-            border-radius: 25px;
-            padding: 20px;
+            border-radius: 30px;
+            padding: 25px;
             display: flex;
             align-items: center;
             justify-content: center;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+            box-shadow: 0 15px 50px rgba(0,0,0,0.4);
             animation: fadeInUp 0.8s ease;
             overflow: hidden;
         }
@@ -328,6 +328,11 @@
             font-size: 1.3rem;
         }
 
+        .download-actions {
+            display: flex;
+            gap: 1rem;
+        }
+
         .download-meta {
             color: #666;
             font-size: 0.9rem;
@@ -345,7 +350,7 @@
         .download-button {
             background: linear-gradient(135deg, #2c4a6e 0%, #5a3a6e 100%);
             color: white;
-            padding: 0.8rem 2rem;
+            padding: 0.7rem 1.5rem;
             border-radius: 50px;
             text-decoration: none;
             font-weight: bold;
@@ -354,11 +359,32 @@
             align-items: center;
             gap: 0.5rem;
             box-shadow: 0 3px 10px rgba(90, 58, 110, 0.3);
+            font-size: 0.9rem;
         }
 
         .download-button:hover {
             transform: scale(1.05);
             box-shadow: 0 5px 20px rgba(90, 58, 110, 0.5);
+        }
+
+        .view-button {
+            background: linear-gradient(135deg, #c9a961 0%, #e8d49a 100%);
+            color: #2c4a6e;
+            padding: 0.7rem 1.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            box-shadow: 0 3px 10px rgba(201, 169, 97, 0.3);
+            font-size: 0.9rem;
+        }
+
+        .view-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 20px rgba(201, 169, 97, 0.5);
         }
 
         .no-files-message {
@@ -408,6 +434,16 @@
             }
 
             .download-meta {
+                justify-content: center;
+            }
+
+            .download-actions {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .download-actions a {
+                width: 100%;
                 justify-content: center;
             }
         }
@@ -574,9 +610,14 @@
                             <span>📦 ${file.size}</span>
                         </div>
                     </div>
-                    <a href="${file.url}" class="download-button" download="${file.name}.pdf">
-                        ⬇️ Download
-                    </a>
+                    <div class="download-actions">
+                        <a href="${file.url}" class="view-button" target="_blank">
+                            👁️ View
+                        </a>
+                        <a href="${file.url}" class="download-button" download="${file.name}.pdf">
+                            ⬇️ Download
+                        </a>
+                    </div>
                 `;
                 container.appendChild(card);
             });
