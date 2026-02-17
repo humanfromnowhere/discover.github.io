@@ -571,35 +571,26 @@
     </footer>
 
     <script>
-        // DOSYALARINIZI BURAYA EKLEYİN
-        // GitHub'a dosyalarınızı yükledikten sonra raw URL'lerini alın ve buraya ekleyin
-        const files = [
-            {
-                name: "Senior Project Proposal",
-                url: "https://raw.githubusercontent.com/humanfromnowhere/discover.github.io/main/Senior%20Project%20Proposal.pdf",
-                size: "PDF Document",
-                date: "2025-10-10"
-            }
-              {
-                name: "Analysis Report",
-                url: "https://raw.githubusercontent.com/humanfromnowhere/discover.github.io/main/Analysis%20Report%20(3).pdf",
-                size: "PDF Document",
-                date: "2025-10-10"
-            }
-          {
-                name: "High Level Design Report",
-                url: "https://raw.githubusercontent.com/humanfromnowhere/discover.github.io/main/High-Level%20Design%20Report%20(3).pdf",
-                size: "PDF Document",
-                date: "2025-10-10"
-            }
-            // Yeni dosya eklemek için virgül koyup yukarıdaki formatı tekrarlayın:
-            // {
-            //     name: "Technical Documentation",
-            //     url: "https://raw.githubusercontent.com/username/repo/main/technical-doc.pdf",
-            //     size: "1.8 MB",
-            //     date: "2025-02-01"
-            // }
-        ];
+      const files = [
+    {
+        name: "Senior Project Proposal",
+        url: "https://raw.githubusercontent.com/humanfromnowhere/discover.github.io/main/Senior%20Project%20Proposal.pdf",
+        size: "PDF Document",
+        date: "2024-10-10"
+    },
+    {
+        name: "Analysis Report",
+        url: "https://raw.githubusercontent.com/humanfromnowhere/discover.github.io/main/Analysis%20Report%20(3).pdf",
+        size: "PDF Document",
+        date: "2024-11-15"
+    },
+    {
+        name: "High Level Design Report",
+        url: "https://raw.githubusercontent.com/humanfromnowhere/discover.github.io/main/High-Level%20Design%20Report%20(3).pdf",
+        size: "PDF Document",
+        date: "2024-12-20"
+    }
+];
 
         // Dosyaları göster
         function displayFiles() {
@@ -618,13 +609,13 @@
                     <div class="download-info">
                         <h3>${file.name}</h3>
                         <div class="download-meta">
-                            <span>📅 ${file.date}</span>
-                            <span>📦 ${file.size}</span>
+                            <span>Date ${file.date}</span>
+                            <span> ${file.size}</span>
                         </div>
                     </div>
                     <div class="download-actions">
                         <a href="${file.url}" class="view-button" target="_blank">
-                            👁️ View
+                            View File 
                         </a>
                         <a href="${file.url}" class="download-button" download="${file.name}.pdf">
                             ⬇️ Download
