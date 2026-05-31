@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DiscoVeR - Online VR Touring Tool</title>
+    <title>DiscoVeR - Web-Based VR Touring Platform</title>
     <style>
         * {
             margin: 0;
@@ -461,7 +461,8 @@
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#features">Features</a></li>
-                <li><a href="#downloads">Downloads</a></li>
+                <li><a href="#use-cases">Use Cases</a></li>
+                <li><a href="#downloads">Reports</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -474,125 +475,126 @@
             </div>
         </div>
         <h1>DiscoVeR - Discover Virtual Reality</h1>
-        <p>Transform 3D models into immersive VR experiences directly from your browser</p>
-        <a href="#downloads" class="cta-button">View Reports</a>
+        <p>Transform 3D models into immersive browser-based VR environments using Unity WebGL technology</p>
     </section>
 
     <section id="about" class="about">
         <h2>About Our Project</h2>
         <p>
-            We are aiming to create a VR touring tool that works seamlessly through a website. Users can submit their own 3D models of spaces in either FBX or OBJ formats. Our website will process these models and convert them into fully interactive VR scenes that users can explore freely.
+            <strong>DiscoVeR</strong> is a full-stack, enterprise-grade web platform developed as a senior design project[cite: 35]. It enables users to easily upload, manage, and visualize 3D models through a completely interactive browser environment[cite: 36, 41]. The platform aims to democratize access to immersive digital spaces across multiple industries, professionals, and individual users[cite: 37, 254].
         </p>
         <p>
-            Our innovative platform eliminates the need for external applications or complex software installations. Everything happens directly in your browser, making virtual reality experiences accessible to everyone with a VR headset and internet connection.
+            By integrating a robust Next.js frontend and NestJS backend with a web-optimized Unity WebGL graphics engine, our solution eliminates the need to download heavy standalone applications or configurations[cite: 38, 42, 67]. Everything executes dynamically over a secure web layout, opening the doors of interactive virtual navigation to anyone with a standard browser and an internet connection[cite: 38, 41].
         </p>
         <p>
-            Whether you're a hotel owner wanting to showcase your property, a real estate agent displaying properties, or a museum curator offering virtual tours, our tool provides a simple yet powerful solution for creating immersive VR experiences.
+            Whether you are an individual wanting to freely explore distinct spatial experiences[cite: 255], a passionate architect looking to showcase structural house layouts to potential clients, or a real estate agent aiming to provide intuitive virtual house tours, DiscoVeR bridges the gap between complex 3D graphic data and high-performance, everyday web interaction.
         </p>
     </section>
 
     <section id="features" class="features">
-        <h2>Key Features</h2>
+        <h2>Key Structural Features</h2>
         <div class="features-grid">
             <div class="feature-card">
                 <div class="feature-icon">🎯</div>
-                <h3>Easy Upload</h3>
-                <p>Simply upload your 3D model in FBX or OBJ format and let our system handle the rest.</p>
+                <h3>Next.js 16 SPA Frontend</h3>
+                <p>Built with React 19 and TypeScript, providing secure dashboard management, state protection, and smooth navigation layout[cite: 47, 53].</p>
             </div>
             <div class="feature-card">
-                <div class="feature-icon">🔄</div>
-                <h3>Automatic Processing</h3>
-                <p>Our advanced algorithms automatically convert your model into an optimized VR scene.</p>
+                <div class="feature-icon">⚙️</div>
+                <h3>NestJS 11 Backend API</h3>
+                <p>Enterprise pattern backend with robust validation layer, integrated with a secure SQLite relational schema using Prisma ORM[cite: 58, 62, 99].</p>
             </div>
             <div class="feature-card">
                 <div class="feature-icon">🥽</div>
-                <h3>VR Ready</h3>
-                <p>Experience your space in virtual reality directly from your browser with any VR headset.</p>
+                <h3>Unity WebGL Engine</h3>
+                <p>Renders immersive virtual environments natively, leveraging browser graphics pipeline capability with embedded scripts[cite: 66, 73].</p>
             </div>
             <div class="feature-card">
-                <div class="feature-icon">🌐</div>
-                <h3>Web-Based</h3>
-                <p>No downloads or installations required. Everything works in your web browser.</p>
+                <div class="feature-icon">🔄</div>
+                <h3>GLB Runtime Parsing</h3>
+                <p>Dynamic runtime 3D asset extraction and loading through Javascript bridge calls directly handling efficient single-binary GLB buffers[cite: 68, 69].</p>
             </div>
             <div class="feature-card">
-                <div class="feature-icon">🚶</div>
-                <h3>Free Exploration</h3>
-                <p>Walk around and explore every corner of your virtual space naturally.</p>
+                <div class="feature-icon">🛡️</div>
+                <h3>Rigid Security Architecture</h3>
+                <p>Full JWT sessions, Double-Submit Cookie CSRF protection, Argon2 hashing, Helmet protection, and express rate-limiting controls[cite: 60, 65, 94].</p>
             </div>
             <div class="feature-card">
                 <div class="feature-icon">⚡</div>
-                <h3>Fast Processing</h3>
-                <p>Quick conversion times mean you can start touring your space in minutes.</p>
+                <h3>Zero Installation Needed</h3>
+                <p>Full responsive layout compatible across standard browsers (Chrome, Edge, Firefox) without hardware-locked installations[cite: 38, 153].</p>
             </div>
         </div>
     </section>
 
-    <section class="use-cases">
-        <h2>Use Cases</h2>
+    <section id="use-cases" class="use-cases">
+        <h2>Key Industry & Individual Use Cases</h2>
         <div class="use-case">
-            <h3>🏨 Hotel & Tourism Industry</h3>
+            <h3>🏠 Smart Real Estate (Emlakçılar)</h3>
             <p>
-                Hotel owners can display their properties on their website and let customers view rooms and facilities online. Potential guests can tour the hotel, explore rooms they'll stay in, and experience the atmosphere before booking—all without needing external applications. This is an excellent way for touristic businesses to present their estates to potential customers worldwide.
+                Real estate agents can deliver interactive, browser-based virtual house tours (ev gezisi) to prospective buyers[cite: 259]. Clients can inspect room volumes, wander through properties remotely, and gain an immersive spatial understanding from anywhere in the world, saving immense travel coordination costs[cite: 259, 261].
             </p>
         </div>
         <div class="use-case">
-            <h3>🏠 Real Estate</h3>
+            <h3>🏢 Collaborative Architecture (Mimarlar)</h3>
             <p>
-                Real estate agents can offer virtual property tours to prospective buyers, allowing them to explore homes from anywhere in the world. This saves time and provides a more immersive experience than traditional photo galleries.
+                Architects and designers can utilize the platform to perfectly showcase their newly constructed or planned house blueprints in full 3D[cite: 260]. By uploading optimized model configurations, they can present their layouts to stakeholders and clients, making design walkthroughs completely sensory and intuitive before physical building processes start[cite: 260, 265].
             </p>
         </div>
         <div class="use-case">
-            <h3>🏛️ Museums & Galleries</h3>
+            <h3>👤 Individual Exploration (Bireysel İnsanlar)</h3>
             <p>
-                Cultural institutions can make their collections accessible to global audiences. Visitors can explore exhibitions virtually, bringing art and history to people who might not be able to visit in person.
+                Independent users can freely navigate the platform to explore unique, interactive spaces directly within their standard web browsers[cite: 255]. Individual creators can preview their custom 3D environmental assets natively, experiencing full orbit, zoom, and panning freedoms without needing to launch heavy compilation programs[cite: 70, 83].
             </p>
         </div>
         <div class="use-case">
-            <h3>🏢 Architecture & Design</h3>
+            <h3>🏨 Hotel & Tourism Previews</h3>
             <p>
-                Architects and designers can showcase their projects to clients in an immersive way, allowing stakeholders to experience spaces before they're built.
+                Hotel managers and tourist businesses can display structural layout representations directly on viewer links[cite: 81, 259]. Prospective visitors can explore accommodations and common areas online, building early consumer confidence before finalizing their destination bookings[cite: 259].
             </p>
         </div>
     </section>
 
     <section id="downloads" class="downloads-section">
-        <h2>Project Reports & Documentation</h2>
-        <p class="downloads-subtitle">Download our latest project reports and technical documentation</p>
+        <h2>Project Reports & Technical Documentation</h2>
+        <p class="downloads-subtitle">Access or download the validated engineering documentation for our capstone system</p>
         <div class="downloads-container" id="downloadsContainer">
-            <div class="no-files-message">
-                📂 No files available yet. Check back soon!
             </div>
-        </div>
     </section>
 
-    <footer id="contact">
+    <section id="contact" style="text-align: center; padding: 4rem 2rem; background: #ffffff;">
+        <h2 style="color: #5a3a6e; margin-bottom: 1rem;">Contact Us</h2>
+        <p style="color: #666; max-width: 600px; margin: 0 auto;">Project developed by Levent BEKTEMUR, Dilge Nisa ÜSTÜNTAŞ, and Süzanna NEBİOĞLU under the supervision of Ulaş Güleç[cite: 4, 6].</p>
+    </section>
+
+    <footer id="footer">
         <p>&copy; 2026 DiscoVeR - Online VR Touring Tool. All rights reserved.</p>
-        <p>Senior Year Capstone Project</p>
+        <p>TED University - Departments of Computer & Software Engineering - Senior Capstone Project [cite: 316, 317]</p>
     </footer>
 
     <script>
-      const files = [
-    {
-        name: "Senior Project Proposal",
-        url: "https://raw.githubusercontent.com/humanfromnowhere/discover.github.io/main/Senior%20Project%20Proposal.pdf",
-        size: "PDF Document",
-        date: "2025-10-10"
-    },
-    {
-        name: "Analysis Report",
-        url: "https://raw.githubusercontent.com/humanfromnowhere/discover.github.io/main/Analysis%20Report%20(3).pdf",
-        size: "PDF Document",
-        date: "2025-10-29"
-    },
-    {
-        name: "High Level Design Report",
-        url: "https://raw.githubusercontent.com/humanfromnowhere/discover.github.io/main/High-Level%20Design%20Report%20(3).pdf",
-        size: "PDF Document",
-        date: "2025-11-28"
-    }
-];
+        // Array holding correct historical release dates and technical document paths
+        const files = [
+            {
+                name: "Low-Level Design (LLD) Report",
+                url: "https://raw.githubusercontent.com/humanfromnowhere/discover.github.io/main/Lld%20report%20DiscoVeR%20v2.pdf",
+                size: "PDF Document",
+                date: "2026-03-23"
+            },
+            {
+                name: "Test Plan & Testing Report",
+                url: "https://raw.githubusercontent.com/humanfromnowhere/discover.github.io/main/Test%20Report%20-DiscoVeR%20(1).pdf",
+                size: "PDF Document",
+                date: "2026-04-06"
+            },
+            {
+                name: "Final Graduation Project Report",
+                url: "https://raw.githubusercontent.com/humanfromnowhere/discover.github.io/main/FinalReport-DiscoVeR.pdf",
+                size: "PDF Document",
+                date: "2026-05-15"
+            }
+        ];
 
-        // Dosyaları göster
         function displayFiles() {
             const container = document.getElementById('downloadsContainer');
             
@@ -609,15 +611,15 @@
                     <div class="download-info">
                         <h3>${file.name}</h3>
                         <div class="download-meta">
-                            <span>Date ${file.date}</span>
-                            <span> ${file.size}</span>
+                            <span>📅 Date: ${file.date}</span>
+                            <span>📄 Type: ${file.size}</span>
                         </div>
                     </div>
                     <div class="download-actions">
                         <a href="${file.url}" class="view-button" target="_blank">
-                            View File 
+                            👁️ View File 
                         </a>
-                        <a href="${file.url}" class="download-button" download="${file.name}.pdf">
+                        <a href="${file.url}" class="download-button" download>
                             ⬇️ Download
                         </a>
                     </div>
@@ -626,12 +628,11 @@
             });
         }
 
-        // Sayfa yüklendiğinde dosyaları göster
         window.onload = function() {
             displayFiles();
         };
 
-        // Smooth scrolling
+        // Smooth scrolling anchor support
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
